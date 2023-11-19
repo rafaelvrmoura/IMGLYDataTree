@@ -21,7 +21,7 @@ extension TreeNodeViewModel: Identifiable, Hashable {
 
 class TreeNodeViewModel: ObservableObject {
 
-    let node: TreeNode
+    private var node: TreeNode
 
     @Published var isExpanded: Bool
     @Published var children: [TreeNodeViewModel]?
@@ -40,11 +40,13 @@ class TreeNodeViewModel: ObservableObject {
 
     func removeChild(at offsets: IndexSet) {
 
+        node.children?.remove(atOffsets: offsets)
         children?.remove(atOffsets: offsets)
     }
 
     func move(childAt offsets: IndexSet, to destination: Int) {
         
+        node.children?.move(fromOffsets: offsets, toOffset: destination)
         children?.move(fromOffsets: offsets, toOffset: destination)
     }
 }

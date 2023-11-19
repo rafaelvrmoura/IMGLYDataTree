@@ -11,5 +11,5 @@ struct TreeNode: Decodable {
 
     let label: String?
     let id: String?
-    let children: [TreeNode]?
+    var children: [TreeNode]?
 }
