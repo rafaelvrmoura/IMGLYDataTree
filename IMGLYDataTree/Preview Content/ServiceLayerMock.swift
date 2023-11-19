@@ -11,26 +11,44 @@ final class ServiceLayerMock: ServiceLayerProtocol {
 
     static let instance = ServiceLayerMock()
 
+    private let bundle: Bundle
+
+    private lazy var decoder: JSONDecoder = {
+
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = JSONDecoderDateStrategy
+
+        return decoder
+    }()
+
+    init(with bundle: Bundle = .main) {
+
+        self.bundle = bundle
+    }
+
     func requestTree() async throws -> [TreeNode] {
 
-        return [TreeNode(label: "Test", id: "123",
-                         children: [TreeNode(label: "Test_child1", id: "456",
-                                             children: [TreeNode(label: "Test_child2", id: "456", children: [])])
-                         ]),
-                TreeNode(label: "Test1", id: "03203i",
-                                 children: [TreeNode(label: "Test1_child1", id: "0954",
-                                                     children: [TreeNode(label: "Test1_child2", id: "039548", children: [])])
-                                 ])
-              ]
+        guard let treeJOSN = bundle.url(forResource: "Tree", withExtension: ".json") else {
+
+            return []
+        }
+
+        let data = try Data(contentsOf: treeJOSN)
+
+        return try self.decoder.decode([TreeNode].self, from: data)
+
     }
     
     func requestEntryDetails(id: String) async throws -> EntryDetail {
         
-        return EntryDetail(id: "e20d9958-abff-59f4-8561-0c76292dad73",
-                           createdAt: Date(),
-                           createdBy: "creator@imgly.com",
-                           lastModifiedAt: Date(),
-                           lastModifiedBy: "modifier@imgly.com",
-                           description: "Rebongig joeto gusku tiwwa vapumed cupi ni dep tijur uc rifrezlap peha dobpu gonnehe jija doduvce. Mis silot welug oho gitofpud cif eh ec awara voc volupif fi soimja. Ovi sovwombov farol bajifo vumutu zitoci eb hor dujot efinal fikrubebi wakimah toh rasovumi tipdolum ga wakorca ma. Azonev jajrali atu sufvegta ozudogin iplecvit futaki segjajem kowrize reroref lacevlu gen soufino hud defize filtimot.")
+        guard let entryJSON = bundle.url(forResource: "imgly.A.1", withExtension: ".json") else {
+
+            return EntryDetail(id: nil, createdAt: nil, createdBy: nil, lastModifiedAt: nil, lastModifiedBy: nil, description: nil)
+
+        }
+
+        let data = try Data(contentsOf: entryJSON)
+
+        return try self.decoder.decode(EntryDetail.self, from: data)
     }
 }

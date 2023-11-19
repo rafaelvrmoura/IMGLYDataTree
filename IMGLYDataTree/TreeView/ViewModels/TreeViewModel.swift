@@ -44,4 +44,24 @@ class TreeViewModel: ObservableObject {
             self.state = .error(message: error.localizedDescription)
         }
     }
+
+    func remove(_ offsets: IndexSet) {
+        
+        if case .loaded(let currentTree) = state {
+            
+            var mutableTree = currentTree
+            mutableTree.remove(atOffsets: offsets)
+            self.state = .loaded(tree: mutableTree)
+        }
+    }
+
+    func move(childAt offsets: IndexSet, to destination: Int) {
+
+        if case .loaded(let currentTree) = state {
+
+            var mutableTree = currentTree
+            mutableTree.move(fromOffsets: offsets, toOffset: destination)
+            self.state = .loaded(tree: mutableTree)
+        }
+    }
 }

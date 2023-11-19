@@ -21,6 +21,12 @@ struct TreeNodeView: View {
                 ForEach(children) { child in
 
                     TreeNodeView(viewModel: child)
+
+                }.onDelete { offsets in
+                    viewModel.removeChild(at: offsets)
+
+                }.onMove { sourceOffsets, destination in
+                    viewModel.move(childAt: sourceOffsets, to: destination)
                 }
 
             } label: {

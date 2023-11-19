@@ -35,12 +35,12 @@ struct TreeView: View {
                     ForEach(nodes) { node in
                         TreeNodeView(viewModel: node)
                     }
-                    .onDelete { indexSet in
-                        // TODO: call delete on viewModel
+                    .onDelete { offsets in
+                        viewModel.remove(offsets)
 
                     }
-                    .onMove { indices, newOffset in
-                        // TODO: call move on viewModel
+                    .onMove { sourceOffsets, destination in
+                        viewModel.move(childAt: sourceOffsets, to: destination)
                     }
                 }
                 .refreshable {

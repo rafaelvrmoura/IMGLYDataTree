@@ -42,8 +42,9 @@ struct EntryDetailsView: View {
                     Text(info.title).fontWeight(.bold)
                     Text(info.description)
                 }
-            }.navigationTitle(label)
-            
+            }
+            .navigationTitle(label)
+
         case .error(let message):
             ErrorStateView(errorMessage: message)
             

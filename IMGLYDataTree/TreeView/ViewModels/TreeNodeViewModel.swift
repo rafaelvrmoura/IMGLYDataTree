@@ -9,8 +9,6 @@ import Foundation
 
 extension TreeNodeViewModel: Identifiable, Hashable {
 
-    var id: String { node.id ?? UUID().uuidString }
-
     static func == (lhs: TreeNodeViewModel, rhs: TreeNodeViewModel) -> Bool {
 
         return lhs.id == rhs.id
@@ -27,22 +25,26 @@ class TreeNodeViewModel: ObservableObject {
 
     @Published var isExpanded: Bool
     @Published var children: [TreeNodeViewModel]?
+    let id: String
 
     let label: String
 
     init(node: TreeNode, isExpanded: Bool) {
 
         self.node = node
-        self.label = node.label ?? "[]"
+        self.id = node.id ?? UUID().uuidString
+        self.label = node.label ?? "-"
         self.isExpanded = isExpanded
         self.children = node.children?.map { TreeNodeViewModel(node: $0, isExpanded: false) }
     }
 
-    func removeChild(at index: Int) {
+    func removeChild(at offsets: IndexSet) {
 
+        children?.remove(atOffsets: offsets)
     }
 
-    func insert(child: TreeNode, at index: Int) {
+    func move(childAt offsets: IndexSet, to destination: Int) {
         
+        children?.move(fromOffsets: offsets, toOffset: destination)
     }
 }

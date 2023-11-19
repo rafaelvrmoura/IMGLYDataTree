@@ -43,7 +43,7 @@ class EntryDetailsViewModel: ObservableObject {
             self.state = .loaded(details: detailsIfo(with: detail))
 
         } catch {
-            
+
             self.state = .error(message: error.localizedDescription)
         }
     }

@@ -7,19 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C9DA0872B0A3C2400E13E50 /* ServiceMockError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C9DA0862B0A3C2400E13E50 /* ServiceMockError.swift */; };
+		3C9DA08A2B0A41A400E13E50 /* TreeNode.json in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DA0892B0A41A400E13E50 /* TreeNode.json */; };
 		3CDD09E32B0901F900A7B599 /* IMGLYDataTreeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD09E22B0901F900A7B599 /* IMGLYDataTreeApp.swift */; };
 		3CDD09E52B0901F900A7B599 /* TreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD09E42B0901F900A7B599 /* TreeView.swift */; };
 		3CDD09E92B0901FB00A7B599 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD09E82B0901FB00A7B599 /* Assets.xcassets */; };
 		3CDD09ED2B0901FB00A7B599 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD09EC2B0901FB00A7B599 /* Preview Assets.xcassets */; };
-		3CDD09F72B0901FB00A7B599 /* IMGLYDataTreeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD09F62B0901FB00A7B599 /* IMGLYDataTreeTests.swift */; };
 		3CDD0A012B0901FB00A7B599 /* IMGLYDataTreeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A002B0901FB00A7B599 /* IMGLYDataTreeUITests.swift */; };
 		3CDD0A032B0901FB00A7B599 /* IMGLYDataTreeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A022B0901FB00A7B599 /* IMGLYDataTreeUITestsLaunchTests.swift */; };
 		3CDD0A102B09027300A7B599 /* EntryDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A0F2B09027300A7B599 /* EntryDetailsView.swift */; };
 		3CDD0A1A2B0902E200A7B599 /* EntryDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A192B0902E200A7B599 /* EntryDetail.swift */; };
 		3CDD0A1C2B0902F900A7B599 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A1B2B0902F900A7B599 /* TreeNode.swift */; };
 		3CDD0A1F2B09034500A7B599 /* IMGLYServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A1E2B09034500A7B599 /* IMGLYServiceLayer.swift */; };
-		3CDD0A212B09043500A7B599 /* TreeNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A202B09043500A7B599 /* TreeNodeTests.swift */; };
-		3CDD0A232B09048400A7B599 /* EntryDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A222B09048400A7B599 /* EntryDetailTests.swift */; };
 		3CDD0A262B0904B900A7B599 /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A252B0904B900A7B599 /* DataProvider.swift */; };
 		3CDD0A282B0905AB00A7B599 /* TreeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A272B0905AB00A7B599 /* TreeViewModel.swift */; };
 		3CDD0A2A2B0905B600A7B599 /* TreeNodeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A292B0905B600A7B599 /* TreeNodeViewModel.swift */; };
@@ -31,9 +30,9 @@
 		3CDD0A362B091BE200A7B599 /* EntryDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A352B091BE200A7B599 /* EntryDetailsViewModel.swift */; };
 		3CDD0A392B09275E00A7B599 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A382B09275E00A7B599 /* EmptyStateView.swift */; };
 		3CDD0A3B2B09276900A7B599 /* ErrorStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A3A2B09276900A7B599 /* ErrorStateView.swift */; };
-		3CDD0A3E2B0938B400A7B599 /* Tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD0A3D2B0938B400A7B599 /* Tree.json */; };
-		3CDD0A402B0938DF00A7B599 /* imgly.A.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD0A3F2B0938DF00A7B599 /* imgly.A.1.json */; };
 		3CDD0A422B09527100A7B599 /* EntryDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDD0A412B09527100A7B599 /* EntryDetailsViewModelTests.swift */; };
+		3CDD0A432B0A2E6A00A7B599 /* Tree.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD0A3D2B0938B400A7B599 /* Tree.json */; };
+		3CDD0A442B0A2E6D00A7B599 /* imgly.A.1.json in Resources */ = {isa = PBXBuildFile; fileRef = 3CDD0A3F2B0938DF00A7B599 /* imgly.A.1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3C9DA0862B0A3C2400E13E50 /* ServiceMockError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceMockError.swift; sourceTree = "<group>"; };
+		3C9DA0892B0A41A400E13E50 /* TreeNode.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TreeNode.json; sourceTree = "<group>"; };
 		3CDD09DF2B0901F900A7B599 /* IMGLYDataTree.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IMGLYDataTree.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDD09E22B0901F900A7B599 /* IMGLYDataTreeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLYDataTreeApp.swift; sourceTree = "<group>"; };
 		3CDD09E42B0901F900A7B599 /* TreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeView.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		3CDD09EA2B0901FB00A7B599 /* IMGLYDataTree.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IMGLYDataTree.entitlements; sourceTree = "<group>"; };
 		3CDD09EC2B0901FB00A7B599 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3CDD09F22B0901FB00A7B599 /* IMGLYDataTreeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMGLYDataTreeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3CDD09F62B0901FB00A7B599 /* IMGLYDataTreeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLYDataTreeTests.swift; sourceTree = "<group>"; };
 		3CDD09FC2B0901FB00A7B599 /* IMGLYDataTreeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IMGLYDataTreeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CDD0A002B0901FB00A7B599 /* IMGLYDataTreeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLYDataTreeUITests.swift; sourceTree = "<group>"; };
 		3CDD0A022B0901FB00A7B599 /* IMGLYDataTreeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLYDataTreeUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -69,8 +69,6 @@
 		3CDD0A192B0902E200A7B599 /* EntryDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetail.swift; sourceTree = "<group>"; };
 		3CDD0A1B2B0902F900A7B599 /* TreeNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
 		3CDD0A1E2B09034500A7B599 /* IMGLYServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMGLYServiceLayer.swift; sourceTree = "<group>"; };
-		3CDD0A202B09043500A7B599 /* TreeNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNodeTests.swift; sourceTree = "<group>"; };
-		3CDD0A222B09048400A7B599 /* EntryDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryDetailTests.swift; sourceTree = "<group>"; };
 		3CDD0A252B0904B900A7B599 /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		3CDD0A272B0905AB00A7B599 /* TreeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeViewModel.swift; sourceTree = "<group>"; };
 		3CDD0A292B0905B600A7B599 /* TreeNodeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeNodeViewModel.swift; sourceTree = "<group>"; };
@@ -112,6 +110,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C9DA0882B0A3CB700E13E50 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				3C9DA0862B0A3C2400E13E50 /* ServiceMockError.swift */,
+				3C9DA0892B0A41A400E13E50 /* TreeNode.json */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		3CDD09D62B0901F900A7B599 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +157,7 @@
 		3CDD09EB2B0901FB00A7B599 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				3CDD0A3C2B09387500A7B599 /* Resources */,
 				3CDD09EC2B0901FB00A7B599 /* Preview Assets.xcassets */,
 				3CDD0A312B09148200A7B599 /* ServiceLayerMock.swift */,
 			);
@@ -159,10 +167,7 @@
 		3CDD09F52B0901FB00A7B599 /* IMGLYDataTreeTests */ = {
 			isa = PBXGroup;
 			children = (
-				3CDD0A3C2B09387500A7B599 /* Resources */,
-				3CDD09F62B0901FB00A7B599 /* IMGLYDataTreeTests.swift */,
-				3CDD0A202B09043500A7B599 /* TreeNodeTests.swift */,
-				3CDD0A222B09048400A7B599 /* EntryDetailTests.swift */,
+				3C9DA0882B0A3CB700E13E50 /* Mocks */,
 				3CDD0A2B2B0907FF00A7B599 /* TreeViewModelTests.swift */,
 				3CDD0A2D2B09080B00A7B599 /* TreeNodeViewModelTests.swift */,
 				3CDD0A412B09527100A7B599 /* EntryDetailsViewModelTests.swift */,
@@ -381,7 +386,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CDD0A432B0A2E6A00A7B599 /* Tree.json in Resources */,
 				3CDD09ED2B0901FB00A7B599 /* Preview Assets.xcassets in Resources */,
+				3CDD0A442B0A2E6D00A7B599 /* imgly.A.1.json in Resources */,
 				3CDD09E92B0901FB00A7B599 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,8 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CDD0A402B0938DF00A7B599 /* imgly.A.1.json in Resources */,
-				3CDD0A3E2B0938B400A7B599 /* Tree.json in Resources */,
+				3C9DA08A2B0A41A400E13E50 /* TreeNode.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -432,10 +438,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CDD0A422B09527100A7B599 /* EntryDetailsViewModelTests.swift in Sources */,
-				3CDD09F72B0901FB00A7B599 /* IMGLYDataTreeTests.swift in Sources */,
-				3CDD0A212B09043500A7B599 /* TreeNodeTests.swift in Sources */,
+				3C9DA0872B0A3C2400E13E50 /* ServiceMockError.swift in Sources */,
 				3CDD0A2C2B0907FF00A7B599 /* TreeViewModelTests.swift in Sources */,
-				3CDD0A232B09048400A7B599 /* EntryDetailTests.swift in Sources */,
 				3CDD0A2E2B09080B00A7B599 /* TreeNodeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
